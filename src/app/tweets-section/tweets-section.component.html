@@ -1,0 +1,19 @@
+<div class="list-group">
+  <div class="tweets_header">
+    <h1 id="tweets_title">Tweets</h1>
+    <button class="btn btn-primary" (click)="sort_likes()">likes<img src="../assets/icons8-sort-48.png"></button>
+
+  </div>
+  <div class="list-group-scroller">
+  <div *ngFor="let tweet of Tweets" >
+    <a href={{tweet.lien}} [ngStyle]="{'background-color':getTweetColor(tweet.likes)}" class="list-group-item list-group-item-action active" aria-current="true">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">"{{tweet.Content}}"</h5>
+        <small>{{tweet.likes}} likes</small>
+      </div>
+      <!-- <p class="mb-1">Some placeholder content in a paragraph.</p>
+      <small>And some small print.</small> -->
+  </a>
+</div>
+  </div>
+</div>

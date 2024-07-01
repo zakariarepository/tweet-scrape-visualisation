@@ -1,0 +1,25 @@
+
+<h1 id="title">Projet Integre S4</h1>
+<div class="container d-flex align-items-center w-50">
+  <div class="input-container">
+  <app-key-word-section *ngFor="let i of Arr(KeyWordCount)"/>
+  </div>
+  <div class="button-container">
+    <button type="button" class="btn btn-primary" (click)="addKeyWord()">Add Key Word</button>
+    <button type="button" class="btn btn-primary go" (click)="Go()">Go</button>
+  </div>
+</div>
+<div class="resultSection">
+  <div style="width: 45%">
+    <app-tweets-section *ngIf="showTweets==true"/>
+  </div>
+  <div style="width: 55%">
+    <app-pie-chart/>
+  </div>
+</div>
+<div>
+  <app-bar-chart></app-bar-chart>
+</div>
+<div>
+  <app-timeline-chart></app-timeline-chart>
+</div>

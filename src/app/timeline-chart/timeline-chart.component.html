@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="title-container">
+    <h1 style="text-align:center" id="tweets_title"> Bar chart of Happiness & Anger
+    </h1><br/>
+  </div>
+  <div>
+    <canvas id="canvas"
+            baseChart
+            [chartType]="chartType"
+            [datasets]="chartData"
+            [labels]="chartLabels"
+            [colors]="chartColors"
+            [options]="chartOptions"
+    ></canvas>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+.list-group{
+    height: 370px;
+    margin-left: 10%;
+
+}
+.list-group-scroller{
+  overflow-y: scroll;
+}
+.list-group-item{
+    margin-bottom: 7px;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.list-group-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.list-group-scroller {
+  overflow-y: scroll; /* Add the ability to scroll */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#tweets_title{
+  color: white;
+  font-weight: bold;
+  margin-left: 3%;
+}
+.tweets_header{
+  display: flex;
+  justify-content: space-between;
+}
+button{
+  height: 70%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+}
+img{
+  height: 23px;
+  margin-left: 5px;
+}
